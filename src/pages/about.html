@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/src/styles/about.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <img class="montalex" src="../Montalex/Montalex Oil.svg " alt="" srcset="">
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html" class="">About us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sustainability.html">Sustainabilty</a></li>
+                            <li><a href="energy-transition.html">Energy Transition</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
+                        </ul>
+                    </li>
+					<li><a href="terminal-port.html">Terminal and Port</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="">Services</a>
+                        <ul class="dropdown-menu ii">
+                            <li><a href="tank-storage.html">Tank Storage</a></li>
+                            <li><a href="crude-transhipment.html">Crude Transhippment</a></li>
+                            <li><a href="bunkenring.html">Bumkering Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home about-us" >
+        <div class="home-content about-uscontent">
+            <h1>About Us</h1>
+            <div class="breadcrumb aboutbreadcrumb">
+                <a href="../../index.html">HOME</a>
+                <span class="arrow">➝</span>
+                <a href="about.html">ABOUT US</a>
+            </div>
+            
+        </div>
+    </section>
+    <section class="logistics-overview">
+        <div class="logistics-content">
+            <h2>#1 Leading Tank Farm Logistics Company.</h2>
+            <p>
+                Gettafix Logistics UG, a German-based independent storage company with the Handelsregister-Nummer: HRB 34977 
+                and the OH-Nummer: C-22677866, has long been a dominant player in the storage and distribution of crude oil, 
+                refined petroleum products, and biofuels across Europe, America, Asia, and the rest of the world.
+            </p>
+            <p>
+                The company owns and operates terminals in Germany such as Frankfurt/Main Terminal, Hamburg Terminal, and others, 
+                as well as terminals in Rotterdam Port, Houston Port, Shanghai Port, Fujairah Terminal, Banyan Terminal, and 
+                other ports throughout Europe and Asia. The firm’s total storage capacity exceeds 16.23 million cubic meters.
+            </p>
+    
+            <!-- FLEX CONTAINER for Last Paragraph + Growth Info -->
+            <div class="content-flex">
+                <div class="company-text">
+                    <p class="company-growth-text">
+                        We provide dry bulk and liquid bulk product transshipment, storage, and processing to our customers. 
+                        Gettafix Logistics UG has a distinct independent position in the chain of bulk commodities storage for a wide 
+                        range of goods, offering first-rate access to deep-draught terminals in Europe as well as first-rate hinterland 
+                        connectivity through barge, rail, and truck.
+                    </p>
+                    <p>
+                        Our logistics network ensures the highest standards of safety and efficiency, optimizing operations to meet the 
+                        demands of a fast-paced global market.
+                    </p>
+                    <p>
+                        With state-of-the-art technology and a dedicated team, we strive to provide seamless storage and transportation solutions, 
+                        ensuring timely delivery and reliability.
+                    </p>
+                    <p>
+                        The company continues to expand its global reach, establishing partnerships that drive sustainable growth and innovation.
+                    </p>
+                </div>
+    
+                <!-- Growth Section with Slider -->
+                <section class="growth-section">
+                    <div class="growth-slider">
+                        <div class="growth-slide active">
+                            <div class="growth-card">
+                                <div class="growth-icon">📈</div>
+                                <div class="growth-details">
+                                    <h3>30% Growth</h3>
+                                    <p>Growth in revenue year over year by businesses using Steeler to unify their in-store and online sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="growth-slide">
+                            <div class="growth-card">
+                                <div class="growth-icon">💰</div>
+                                <div class="growth-details">
+                                    <h3>Increased Revenue</h3>
+                                    <p>Companies report a 45% boost in sales after implementing our logistics solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="growth-slide">
+                            <div class="growth-card">
+                                <div class="growth-icon">🚀</div>
+                                <div class="growth-details">
+                                    <h3>Faster Delivery</h3>
+                                    <p>Logistics efficiency increased by 60%, reducing delivery times significantly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Slider Dots -->
+                    <div class="growth-dots">
+                        <span class="dot active" onclick="changeSlide(0)"></span>
+                        <span class="dot" onclick="changeSlide(1)"></span>
+                        <span class="dot" onclick="changeSlide(2)"></span>
+                    </div>
+                </section>
+            </div>
+            <a href="#" class="sustainability-btn primary-button">
+                STEELER SUSTAINABILITY →
+            </a>
+            
+        </div>
+
+        
+    </section>
+
+    <section class="custom-slider">
+        <div class="custom-slider-container">
+            <div class="custom-slide active" style="background-image: url('../Montalex/slider-1.jpg');"></div>
+            <div class="custom-slide" style="background-image: url('../Montalex/slider-2.jpg');"></div>
+            <div class="custom-slide" style="background-image: url('../Montalex/slidr-3.jpg');"></div>
+    
+            <!-- Navigation Arrows -->
+            <button class="custom-slider-btn custom-prev" onclick="moveCustomSlide(-1)">&#10094;</button>
+            <button class="custom-slider-btn custom-next" onclick="moveCustomSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-container">
+            <section class="tab-section">
+                <div class="tabs" id="tabs-container">
+                    <!-- Tabs will be added dynamically -->
+                </div>
+
+                <div class="tab-content">
+                    <div id="content-area">
+                        <!-- Default Content will load here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector(".logistics-overview");
+
+    function handleScroll() {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight - 50) {
+            section.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on page load in case already in view
+});
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".growth-slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+        dots[i].classList.toggle("active", i === index);
+    });
+    currentSlide = index;
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+// Auto-slide every 4 seconds
+setInterval(nextSlide, 4000);
+
+// Manual Click Control
+function changeSlide(index) {
+    showSlide(index);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll("p, h2");
+    elements.forEach(el => el.classList.add("show"));
+});
+
+
+
+
+let customCurrentSlide = 0;
+const customSlides = document.querySelectorAll('.custom-slide');
+
+function moveCustomSlide(direction) {
+    customSlides[customCurrentSlide].classList.remove('active');
+    customCurrentSlide = (customCurrentSlide + direction + customSlides.length) % customSlides.length;
+    customSlides[customCurrentSlide].classList.add('active');
+}
+
+// Auto-slide every 5 seconds
+setInterval(() => moveCustomSlide(1), 5000);
+
+
+
+// Define tabs and content dynamically
+const tabs = ["WHY CHOOSE US", "MISSION & VISION", "HISTORY", "OUR GROWTH"];
+const tabContent = [
+      // WHY CHOOSE US
+      `<div>
+        <p>With over decades of trading petroleum products and biofuels, we are dedicated to creating new sustainability standards and promoting their adoption throughout the sector. Whatever the individual items, we always put our clients and their needs first in all we do.</p>
+
+        <div class="info-features">
+            <div class="feature-box">
+                <h3>Quality Products</h3>
+                <div class="feature-content">
+                    <img src="icon-quality.png" alt="Quality Icon" class="feature-icon">
+                    <p>Our products adhere to or surpass all applicable quality and environmental regulations in Europe. Gettafix Logistics UG stands for quality, as proven by our ISO 9001 certification, among other things.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <h3>Safety First</h3>
+                <div class="feature-content">
+                    <img src="icon-safety.png" alt="Safety Icon" class="feature-icon">
+                    <p>We constantly optimize all of our subsidiaries' activities in terms of technical, organizational, and behavioral safety, developing a proactive safety culture.</p>
+                </div>
+            </div>
+        </div>
+    </div>`,
+    `<div>
+        <h3>OUR MISSION</h3>
+        <p>We aim to provide the best petroleum and biofuel trading solutions, ensuring sustainable energy for future generations.</p>
+        <h3>OUR VISION</h3>
+        <p>To be the leading global provider of efficient, reliable, and sustainable petroleum solutions.</p>
+    </div>`,
+    
+    `<div>
+        <h3>OUR HISTORY</h3>
+        <p>Founded over 20 years ago, our company has grown to become a leader in petroleum trading.</p>
+        <p>We have consistently provided high-quality products to clients across the world.</p>
+    </div>`,
+    
+    `<div>
+        <h3>OUR GROWTH</h3>
+        <p>We have expanded our reach globally, partnering with top energy firms.</p>
+        <p>Our focus remains on innovation, sustainability, and customer satisfaction.</p>
+    </div>`
+];
+
+// Insert Tabs into HTML
+const tabsContainer = document.getElementById("tabs-container");
+tabs.forEach((tab, index) => {
+    let button = document.createElement("button");
+    button.innerText = tab;
+    button.classList.add("tab");
+    if (index === 0) button.classList.add("active");
+    button.onclick = () => changeTab(index);
+    tabsContainer.appendChild(button);
+});
+
+// Load Default Content
+document.getElementById("content-area").innerHTML = tabContent[0];
+
+// Change Tabs
+function changeTab(index) {
+    document.getElementById("content-area").innerHTML = tabContent[index];
+
+    // Update Active Tab
+    document.querySelectorAll(".tab").forEach((tab, idx) => {
+        tab.classList.toggle("active", idx === index);
+    });
+}
+
+
+
+    </script>
+<script src="./src/script/navbar.js"></script>
+</html>
+
