@@ -1,0 +1,440 @@
+.about-us {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 99;
+    width: 100%;
+    /* height: 100vh; */
+    height: 50vh; /* Reduced height */
+    background-image: url(../Montalex/img9911.jpg);
+    background-position: center top;
+    background-size: cover;
+    padding-top: 80px; /* Ensure it doesn't overlap nav */
+}
+
+.about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Keeps overlay behind content */
+}
+
+.about-uscontent {
+    /* position: relative; */
+    z-index: 1;
+}
+
+.about-uscontent h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.aboutbreadcrumb {
+    background: rgba(39, 34, 34, 0.2); /* Transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+}
+
+.aboutbreadcrumb a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.aboutbreadcrumb a:hover {
+    
+    text-decoration: underline; /* Underlines on hover */
+}
+
+.aboutbreadcrumb .arrow {
+    color: white; /* Matches breadcrumb text */
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+p, h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+p.show, h2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* General Section Styling */
+.logistics-overview {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.logistics-content {
+    max-width: 1000px; /* Ensures everything stays aligned */
+    text-align: left;
+}
+
+.logistics-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1A191D;
+}
+
+/* Ensure all paragraphs align properly */
+.logistics-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 800px; /* Keep text width uniform */
+    margin-bottom: 20px;
+}
+
+/* Flex container for last paragraph + growth section */
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.company-text {
+    flex: 1;
+    max-width: 800px;
+}
+
+/* Growth Section */
+.growth-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* Growth Slider */
+.growth-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.growth-slide {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.growth-slide.active {
+    display: block;
+    animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Growth Card Styling */
+.growth-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.growth-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.growth-details h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A191D;
+}
+
+.growth-details p {
+    font-size: 15px;
+    color: #000000;
+}
+
+/* Slider Dots */
+.growth-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 8px;
+    width: 25px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #d9534f;
+}
+
+.sustainability-btn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-color: #d10000; /* Initial red background */
+    color: white; /* Initial text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* .primary-button {
+    position: relative;
+    border: 2px solid #ffffff;
+    border-radius: 500px;
+    width: 250px;
+    height: 48px;
+    overflow: hidden;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+} */
+
+.primary-button:hover {
+    cursor: pointer;
+    border: 2px solid pink;
+}
+
+.primary-button .round {
+    border-radius: 50%;
+    background-color: #0197f6;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: -1;
+    animation: scale-down 0.2s forwards;
+}
+
+.primary-button.animate .round {
+    animation: scale-up 0.5s forwards;
+}
+
+@keyframes scale-up {
+    to {
+        transform: scale(600);
+    }
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(600);
+    }
+    to {
+        ransform: scale(0);
+    }
+}
+
+
+.custom-slider {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slide Container */
+.custom-slider-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* Individual Slide */
+.custom-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Show Active Slide */
+.custom-slide.active {
+    opacity: 1;
+}
+
+/* Navigation Buttons */
+.custom-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background 0.3s ease-in-out;
+}
+
+.custom-prev {
+    left: 20px;
+}
+
+.custom-next {
+    right: 20px;
+}
+
+.custom-slider-btn:hover {
+    background-color: darkred;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .growth-section {
+        max-width: 100%;
+    }
+}
+
+.info-section {
+    width: 100%;
+    min-height: ;
+    background: url('../Montalex/pertamina-w1920x1080.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Tabs Navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    transition: 0.3s;
+}
+
+.tab.active {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+/* Tab Content */
+.tab-content {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+ /* Feature Container - FLEX FIX */
+ .info-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Header on top, content below */
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-icon {
+    width: 40px; 
+    height: 40px;
+}
+
+.feature-content p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .info-features {
+        flex-direction: column;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
