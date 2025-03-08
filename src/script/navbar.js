@@ -28,3 +28,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+const track = document.querySelector('.gallery-track');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+
+let index = 0;
+const slides = document.querySelectorAll('.gallery-slide');
+const totalSlides = slides.length;
+
+function updateSlide() {
+    track.style.transition = "transform 0.5s ease-in-out";
+    track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Next Button
+nextButton.addEventListener('click', () => {
+    if (index >= totalSlides - 1) {
+        index = 0; // Loop back to the first slide
+    } else {
+        index++;
+    }
+    updateSlide();
+});
+
+// Previous Button
+prevButton.addEventListener('click', () => {
+    if (index <= 0) {
+        index = totalSlides - 1; // Loop back to the last slide
+    } else {
+        index--;
+    }
+    updateSlide();
+});
