@@ -12,7 +12,7 @@
     background-image: url(../Montalex/img9911.jpg);
     background-position: center top;
     background-size: cover;
-    padding-top: 80px; /* Ensure it doesn't overlap nav */
+    padding-top: 80px; 
 }
 
 .about-us::before {
@@ -22,27 +22,33 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Keeps overlay behind content */
+    z-index: 0; 
 }
 
 .about-uscontent {
     /* position: relative; */
     z-index: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-uscontent h1 {
     font-size: 4rem;
+    text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
     color: #000000;
 }
 
 .aboutbreadcrumb {
-    background: rgba(39, 34, 34, 0.2); /* Transparent background */
+    background: rgba(39, 34, 34, 0.2);
     padding: 10px 20px;
     border-radius: 5px;
     display: flex;
     gap: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutbreadcrumb a {
@@ -54,11 +60,10 @@
 
 .aboutbreadcrumb a:hover {
     
-    text-decoration: underline; /* Underlines on hover */
-}
+    text-decoration: underline; }
 
 .aboutbreadcrumb .arrow {
-    color: white; /* Matches breadcrumb text */
+    color: white; 
     font-weight: bold;
     font-size: 1.2rem;
     opacity: 0.8;
@@ -82,7 +87,7 @@ p.show, h2.show {
 }
 
 .logistics-content {
-    max-width: 1000px; /* Ensures everything stays aligned */
+    max-width: 1000px; 
     text-align: left;
 }
 
@@ -93,16 +98,16 @@ p.show, h2.show {
     color: #1A191D;
 }
 
-/* Ensure all paragraphs align properly */
+
 .logistics-content p {
     font-size: 18px;
     line-height: 1.6;
     color: #000000;
-    max-width: 800px; /* Keep text width uniform */
+    max-width: 800px; 
     margin-bottom: 20px;
 }
 
-/* Flex container for last paragraph + growth section */
+
 .content-flex {
     display: flex;
     justify-content: space-between;
@@ -198,8 +203,8 @@ p.show, h2.show {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    background-color: #d10000; /* Initial red background */
-    color: white; /* Initial text color */
+    background-color: #d10000; 
+    color: white; 
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -209,20 +214,6 @@ p.show, h2.show {
     transition: color 0.3s ease-in-out;
 }
 
-/* .primary-button {
-    position: relative;
-    border: 2px solid #ffffff;
-    border-radius: 500px;
-    width: 250px;
-    height: 48px;
-    overflow: hidden;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
-} */
 
 .primary-button:hover {
     cursor: pointer;
@@ -317,21 +308,9 @@ p.show, h2.show {
 }
 
 
-/* Responsive */
-@media (max-width: 768px) {
-    .content-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .growth-section {
-        max-width: 100%;
-    }
-}
 
 .info-section {
-    width: 100%;
-    min-height: ;
+    /* width: 100%; */
     background: url('../Montalex/pertamina-w1920x1080.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -384,30 +363,47 @@ p.show, h2.show {
     border-radius: 8px;
     margin-top: 20px;
 }
+.tab-pane {
+    display: none;
+}
 
- /* Feature Container - FLEX FIX */
- .info-features {
-    display: flex;
-    justify-content: space-between;
+.tab-pane.active {
+    display: block;
+}
+
+.info-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 30px;
     margin-top: 20px;
 }
 
 .feature-box {
-    flex: 1;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Header on top, content below */
+    flex-direction: column;
     align-items: flex-start;
     gap: 10px;
 }
 
+
+
+
 .feature-box h3 {
-    font-size: 18px;
+    font-size: 
+    20px;
     font-weight: bold;
+    color: #1A191D;
+}
+
+.feature-box h3 {
+    font-size: 
+    15px;
+    font-weight: bold;
+    color: #666666;
 }
 
 .feature-content {
@@ -416,19 +412,186 @@ p.show, h2.show {
     gap: 10px;
 }
 
-.feature-icon {
+/* .feature-icon {
     width: 40px; 
     height: 40px;
-}
+} */
 
 .feature-content p {
-    font-size: 14px;
-    color: #555;
+    font-size: 15px;
+    color: #777777;
     margin: 0;
+  
 }
 
-/* Responsive Fix */
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 50px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Box Styling */
+.mission-box, .vision-box {
+    background: #fff;
+    padding: 15px;
+    flex: 1;
+}
+
+/* Headings */
+.mission-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Small Red Dot */
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Paragraphs */
+.mission-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+.vision-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Small Red Dot */
+
+
+/* Paragraphs */
+.vision-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* Timeline Container */
+.timeline-container {
+    max-width: 900px;
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+   
+   
+   
+}
+
+/* Timeline Event */
+.timeline-event {
+    margin-bottom: 20px;
+}
+
+/* Bullet and Title Wrapper */
+.event-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Red Bullet */
+.event-header::before {
+    content: "▪";
+    color: red;
+    font-size: 18px;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+/* Event Title */
+.event-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1A191D;
+}
+
+/* Event Description */
+.event-description {
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+
+ /* Container for the Statistics Section */
+ .statistics-container {
+    max-width: 900px;
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styling */
+.statistics-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Image Styling */
+.statistics-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Responsive */
 @media (max-width: 768px) {
+    .content-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .growth-section {
+        max-width: 100%;
+    }
+    .info-features {
+        grid-template-columns: 1fr; /* Switch to 1 column on smaller screens */
+    }
+    .statistics-container {
+        padding: 20px;
+    }
+
+    .statistics-title {
+        font-size: 16px;
+    }
     .info-features {
         flex-direction: column;
     }
@@ -436,5 +599,20 @@ p.show, h2.show {
     .tab {
         font-size: 14px;
         padding: 10px;
+    }
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .timeline-container {
+        padding: 20px;
+    }
+
+    .event-title {
+        font-size: 16px;
+    }
+
+    .event-description {
+        font-size: 14px;
     }
 }

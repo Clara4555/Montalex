@@ -6,6 +6,7 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/about.css">
 </head>
 <body>
     <nav class="nav">
@@ -15,23 +16,23 @@
                 <ul class="navlinks">
                     <li><a href="../../index.html">Home</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/about.html" class="">About us</a>
+                        <a href="about.html" class="">About us</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./src/pages/sustainability.html">Sustainabilty</a></li>
-                            <li><a href="./src/pages/energy-transition.html">Energy Transition</a></li>
-                            <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                            <li><a href="sustainability.html">Sustainabilty</a></li>
+                            <li><a href="energy-transition.html">Energy Transition</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
                         </ul>
                     </li>
-					<li><a href="./src/pages/terminal-port.html">Terminal and Port</a></li>
+					<li><a href="terminal-port.html">Terminal and Port</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/services.html" class="">Services</a>
+                        <a href="services.html" class="">Services</a>
                         <ul class="dropdown-menu ii">
-                            <li><a href="./src/pages/tank-storage.html">Tank Storage</a></li>
-                            <li><a href="./src/pages/crude-transhipment.html">Crude Transhippment</a></li>
-                            <li><a href="./src/pages/bunkenring.html">Bunkering Services</a></li>
+                            <li><a href="tank-storage.html">Tank Storage</a></li>
+                            <li><a href="crude-transhipment.html">Crude Transhippment</a></li>
+                            <li><a href="bunkenring.html">Bunkering Services</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -41,27 +42,250 @@
             </span>
         </div>
     </nav>
-    <section class="home">        
+   
+
+
+
+
+    <section class="about-us" >
+        <div class="home-content about-uscontent">
+            <h1>About Us</h1>
+            <div class="breadcrumb aboutbreadcrumb">
+                <a href="../../index.html">HOME</a>
+                <span class="arrow">➝</span>
+                <a href="about.html">ABOUT US</a>
+            </div>
+            
+        </div>
     </section>
-    <!-- DONT TOUCH ANYTHING ABOVE THIS LINE. MADDAAAMMMMMM -->
+    <section class="logistics-overview">
+        <div class="logistics-content">
+            <h2>#1 Leading Tank Farm Logistics Company.</h2>
+            <p>
+                Gettafix Logistics UG, a German-based independent storage company with the Handelsregister-Nummer: HRB 34977 
+                and the OH-Nummer: C-22677866, has long been a dominant player in the storage and distribution of crude oil, 
+                refined petroleum products, and biofuels across Europe, America, Asia, and the rest of the world.
+            </p>
+            <p>
+                The company owns and operates terminals in Germany such as Frankfurt/Main Terminal, Hamburg Terminal, and others, 
+                as well as terminals in Rotterdam Port, Houston Port, Shanghai Port, Fujairah Terminal, Banyan Terminal, and 
+                other ports throughout Europe and Asia. The firm’s total storage capacity exceeds 16.23 million cubic meters.
+            </p>
+    
+            <!-- FLEX CONTAINER for Last Paragraph + Growth Info -->
+            <div class="content-flex">
+                <div class="company-text">
+                    <p class="company-growth-text">
+                        We provide dry bulk and liquid bulk product transshipment, storage, and processing to our customers. 
+                        Gettafix Logistics UG has a distinct independent position in the chain of bulk commodities storage for a wide 
+                        range of goods, offering first-rate access to deep-draught terminals in Europe as well as first-rate hinterland 
+                        connectivity through barge, rail, and truck.
+                    </p>
+                    <p>
+                        Our logistics network ensures the highest standards of safety and efficiency, optimizing operations to meet the 
+                        demands of a fast-paced global market.
+                    </p>
+                    <p>
+                        With state-of-the-art technology and a dedicated team, we strive to provide seamless storage and transportation solutions, 
+                        ensuring timely delivery and reliability.
+                    </p>
+                    <p>
+                        The company continues to expand its global reach, establishing partnerships that drive sustainable growth and innovation.
+                    </p>
+                </div>
+    
+                <!-- Growth Section with Slider -->
+                <section class="growth-section">
+                    <div class="growth-slider">
+                        <div class="growth-slide active">
+                            <div class="growth-card">
+                                <div class="growth-icon">📈</div>
+                                <div class="growth-details">
+                                    <h3>30% Growth</h3>
+                                    <p>Growth in revenue year over year by businesses using Steeler to unify their in-store and online sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="growth-slide">
+                            <div class="growth-card">
+                                <div class="growth-icon">💰</div>
+                                <div class="growth-details">
+                                    <h3>Increased Revenue</h3>
+                                    <p>Companies report a 45% boost in sales after implementing our logistics solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="growth-slide">
+                            <div class="growth-card">
+                                <div class="growth-icon">🚀</div>
+                                <div class="growth-details">
+                                    <h3>Faster Delivery</h3>
+                                    <p>Logistics efficiency increased by 60%, reducing delivery times significantly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Slider Dots -->
+                    <div class="growth-dots">
+                        <span class="dot active" onclick="changeSlide(0)"></span>
+                        <span class="dot" onclick="changeSlide(1)"></span>
+                        <span class="dot" onclick="changeSlide(2)"></span>
+                    </div>
+                </section>
+            </div>
+            <a href="#" class="sustainability-btn primary-button">
+                STEELER SUSTAINABILITY →
+            </a>
+            
+        </div>
 
+        
+    </section>
 
+    <section class="custom-slider">
+        <div class="custom-slider-container">
+            <div class="custom-slide active" style="background-image: url('../Montalex/slider-1.jpg');"></div>
+            <div class="custom-slide" style="background-image: url('../Montalex/slider-2.jpg');"></div>
+            <div class="custom-slide" style="background-image: url('../Montalex/slidr-3.jpg');"></div>
+    
+            <!-- Navigation Arrows -->
+            <button class="custom-slider-btn custom-prev" onclick="moveCustomSlide(-1)">&#10094;</button>
+            <button class="custom-slider-btn custom-next" onclick="moveCustomSlide(1)">&#10095;</button>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">HOME</h2>
-    </div>
-
+    <section class="info-section">
+        <div class="info-container">
+            <section class="tab-section">
+                <div class="tabs" id="tabs-container">
+                    <button class="tab active" onclick="showTab(event, 'why-choose-us')">WHY CHOOSE US</button>
+                    <button class="tab" onclick="showTab(event, 'mission-vision')">MISSION & VISION</button>
+                    <button class="tab" onclick="showTab(event, 'history')">HISTORY</button>
+                    <button class="tab" onclick="showTab(event, 'our-growth')">OUR GROWTH</button>
+                </div>
+    
+                <div class="tab-content">
+                    <div id="why-choose-us" class="tab-pane active">
+                        <h2>With over decades of trading petroleum products and biofuels...</h2>
+                        <div class="info-features">
+                            <div class="feature-box">
+                                <h3>Quality Products</h3>
+                                <div class="feature-content">
+                                    <img src="icon-quality.png" alt="Quality Icon" class="feature-icon">
+                                    <p>Our products adhere to or surpass all applicable quality and environmental regulations in Europe.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-box">
+                                <h3>Safety First</h3>
+                                <div class="feature-content">
+                                    <img src="icon-safety.png" alt="Safety Icon" class="feature-icon">
+                                    <p>We constantly optimize all activities to ensure safety.</p>
+                                </div>
+                            </div>
+                    
+                            <div class="feature-box">
+                                <h3>Advanced Logistics</h3>
+                                <div class="feature-content">
+                                    <img src="icon-logistics.png" alt="Logistics Icon" class="feature-icon">
+                                    <p>Innovative storage and delivery solutions for efficiency.</p>
+                                </div>
+                            </div>
+                    
+                            <div class="feature-box">
+                                <h3>Customer Satisfaction</h3>
+                                <div class="feature-content">
+                                    <img src="icon-customer.png" alt="Customer Icon" class="feature-icon">
+                                    <p>Our clients are at the center of our operations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="mission-vision" class="tab-pane">
+                        <section class="mission-vision">
+                            <div class="container">
+                                <div class="mission-box">
+                                    <h3><span class="dot"></span> OUR MISSION</h3>
+                                    <p>
+                                        The company’s goal is to provide flexible storage and transportation solutions that precisely match 
+                                        the needs of the client. We aim for excellence in everything we do and are always looking for ways 
+                                        to improve. We are devoted to exceeding both our own and other people’s expectations.
+                                        With vigor and a sense of urgency, we strive for positive outcomes.
+                                    </p>
+                                </div>
+                    
+                                <div class="vision-box">
+                                    <h3><span class="dot"></span> OUR VISION</h3>
+                                    <p>
+                                        With the best technical staff in the Oil & Gas business, we want to become a valued partner and 
+                                        global provider of economical and dependable services.
+                                        Gettafix Logistics UG plans to increase its investments in automation, hire the right people, 
+                                        continue to innovate, and recognize and seize possibilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    
+                    </div>
+    
+                    <div id="history" class="tab-pane">
+                        <section class="timeline-container">
+                            <div class="timeline-event">
+                                <div class="event-header">
+                                    <div class="event-title">1955 - From Birth to a Period of Growth</div>
+                                </div>
+                                <p class="event-description">
+                                    We began as a domestic oil trading enterprise. Today, we are in the midst of an exciting period 
+                                    of innovation and investment known as the energy transition...
+                                </p>
+                            </div>
+                    
+                            <div class="timeline-event">
+                                <div class="event-header">
+                                    <div class="event-title">1970 - Creation of Demand and New Business</div>
+                                </div>
+                                <p class="event-description">
+                                    Gettafix Logistics UG transports goods to dealers in Trier, Eifel, Hunsrück, Westerwald...
+                                </p>
+                            </div>
+                    
+                            <div class="timeline-event">
+                                <div class="event-header">
+                                    <div class="event-title">2000 - Opening up Limitless Worlds of Potential</div>
+                                </div>
+                                <p class="event-description">
+                                    Gettafix Logistics UG has supplied its Connecticut customers with gasoil and diesel from a tank terminal...
+                                </p>
+                            </div>
+                    
+                            <div class="timeline-event">
+                                <div class="event-header">
+                                    <div class="event-title">2015 - Moving further with global operations</div>
+                                </div>
+                                <p class="event-description">
+                                    Gettafix restructures its operations into three distinct business groups...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+    
+                    <div id="our-growth" class="tab-pane">
+                        <section class="statistics-container">
+                            <p class="statistics-title">
+                                Refer to the statistics of our company. Manufacturer’s high-end manufacturing services are 
+                                a perfect complement to today’s high-tech industries.
+                            </p>
+                            <img src="../Montalex/service_chart.jpg" alt="Company Statistics Graph" class="statistics-image">
+                        </section>
+                    
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
 
 
 
@@ -97,26 +321,26 @@
             
                     <!-- About Us Dropdown -->
                     <li class="dropdown">
-                        <a href="./src/pages/about.html">
+                        <a href="about.html">
                             <i class="fas fa-chevron-right"></i> About us
                         </a>
                         <ul class="submenu">
-                            <li><a href="./src/pages/team.html">Our Team</a></li>
+                            <li><a href="">Our Team</a></li>
                             <li><a href="./src/pages/mission.html">Mission & Vision</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
+                    <li><a href="terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
                                         <!-- Services Dropdown -->
                                         <li class="dropdown">
-                                            <a href="./src/pages/services.html">
+                                            <a href="services.html">
                                                 <i class="fas fa-chevron-right"></i> Services
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="./src/pages/logistics.html">Logistics</a></li>
-                                                <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                                                <li><a href="">Logistics</a></li>
+                                                <li><a href="shipping.html">Shipping</a></li>
                                             </ul>
                                         </li>
-                    <li><a href="./src/pages/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>
             
@@ -141,15 +365,9 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="./src/script/navbar.js"></script>
-<script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
+<script src="../script/index.js"></script>
+<script src="../script/navbar.js"></script>
+
+    
 </script>
 </html>

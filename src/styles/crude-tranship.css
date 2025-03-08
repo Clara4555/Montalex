@@ -1,0 +1,128 @@
+.body {
+   
+    
+    color: #000000;
+    padding: 100px;
+}
+
+
+
+/* Section Wrapper */
+.section-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Content */
+.text-section {
+    margin-bottom: 30px;
+   
+}
+.crude-section{
+    max-width: 1000px
+}
+
+/* Headings */
+.section-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #003366;
+    text-transform: capitalize;
+}
+
+/* Paragraph */
+.section-text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #002f6c; /* Dark Blue */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contact-email, .contact-phone {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Partners Section */
+.partners-section {
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.partner-logo {
+    height: 50px;
+    max-width: 120px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-container {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-email, .contact-phone {
+        font-size: 16px;
+    }
+
+    .partner-logo {
+        height: 40px;
+        max-width: 1
+}
+}

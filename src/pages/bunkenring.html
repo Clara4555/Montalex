@@ -6,6 +6,8 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
+ 
+    <link rel="stylesheet" href="../styles/energy -transitioning.css">
 </head>
 <body>
     <nav class="nav">
@@ -15,23 +17,23 @@
                 <ul class="navlinks">
                     <li><a href="../../index.html">Home</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/about.html" class="">About us</a>
+                        <a href="about.html" class="">About us</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./src/pages/sustainability.html">Sustainabilty</a></li>
-                            <li><a href="./src/pages/energy-transition.html">Energy Transition</a></li>
-                            <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                            <li><a href="sustainability.html">Sustainabilty</a></li>
+                            <li><a href="energy-transition.html">Energy Transition</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
                         </ul>
                     </li>
-					<li><a href="./src/pages/terminal-port.html">Terminal and Port</a></li>
+					<li><a href="terminal-port.html">Terminal and Port</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/services.html" class="">Services</a>
+                        <a href="services.html" class="">Services</a>
                         <ul class="dropdown-menu ii">
-                            <li><a href="./src/pages/tank-storage.html">Tank Storage</a></li>
-                            <li><a href="./src/pages/crude-transhipment.html">Crude Transhippment</a></li>
-                            <li><a href="./src/pages/bunkenring.html">Bunkering Services</a></li>
+                            <li><a href="tank-storage.html">Tank Storage</a></li>
+                            <li><a href="crude-transhipment.html">Crude Transhippment</a></li>
+                            <li><a href="bunkenring.html">Bunkering Services</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -41,9 +43,24 @@
             </span>
         </div>
     </nav>
-    <section class="home">        
+    
+
+
+    <section class="about-us" >
+        <div class="home-content about-uscontent">
+            <h1>Bunkering</h1>
+            <div class="breadcrumb aboutbreadcrumb">
+                <a href="../../index.html">HOME</a>
+                <span class="arrow">➝</span>
+                <a href="services.html">Services</a>
+                <span class="arrow">➝</span>
+                <a href="bunkenring.html">Bunkering</a>
+            </div>
+            
+        </div>
     </section>
-    <!-- DONT TOUCH ANYTHING ABOVE THIS LINE. MADDAAAMMMMMM -->
+    <!-- Energy Transition Section -->
+  
 
 
 
@@ -55,30 +72,12 @@
 
 
 
-
-
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">HOME</h2>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- DO NOT TOUCH ANYTHING BELOW THIS LINE OOOOOOOOOOO -->
+    
     <footer>
         <div class="footer-container">
             
             <div class="footer-logo">
-                <img src="./src/Montalex/Montalex Oil.svg" alt="Montalex Logo">
+                <img src="../Montalex/Montalex Oil.svg" alt="Montalex Logo">
                 <p>We ship all over the world wherever you are.</p>
                 <p class="copyright">© 2023 Montalex Oil Refinery, TOO. All rights reserved.</p>
                 
@@ -97,26 +96,26 @@
             
                     <!-- About Us Dropdown -->
                     <li class="dropdown">
-                        <a href="./src/pages/about.html">
+                        <a href="about.html">
                             <i class="fas fa-chevron-right"></i> About us
                         </a>
                         <ul class="submenu">
-                            <li><a href="./src/pages/team.html">Our Team</a></li>
+                            <li><a href="">Our Team</a></li>
                             <li><a href="./src/pages/mission.html">Mission & Vision</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
+                    <li><a href="terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
                                         <!-- Services Dropdown -->
                                         <li class="dropdown">
-                                            <a href="./src/pages/services.html">
+                                            <a href="services.html">
                                                 <i class="fas fa-chevron-right"></i> Services
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="./src/pages/logistics.html">Logistics</a></li>
-                                                <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                                                <li><a href="">Logistics</a></li>
+                                                <li><a href="shipping.html">Shipping</a></li>
                                             </ul>
                                         </li>
-                    <li><a href="./src/pages/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>
             
@@ -141,15 +140,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="./src/script/navbar.js"></script>
-<script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
-</script>
+<script src="../script/index.js"></script>
+<script src="../script/navbar.js"></script>
+  
 </html>

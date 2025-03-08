@@ -6,6 +6,8 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <nav class="nav">
@@ -15,23 +17,23 @@
                 <ul class="navlinks">
                     <li><a href="../../index.html">Home</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/about.html" class="">About us</a>
+                        <a href="about.html" class="">About us</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./src/pages/sustainability.html">Sustainabilty</a></li>
-                            <li><a href="./src/pages/energy-transition.html">Energy Transition</a></li>
-                            <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                            <li><a href="sustainability.html">Sustainabilty</a></li>
+                            <li><a href="energy-transition.html">Energy Transition</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
                         </ul>
                     </li>
-					<li><a href="./src/pages/terminal-port.html">Terminal and Port</a></li>
+					<li><a href="terminal-port.html">Terminal and Port</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/services.html" class="">Services</a>
+                        <a href="services.html" class="">Services</a>
                         <ul class="dropdown-menu ii">
-                            <li><a href="./src/pages/tank-storage.html">Tank Storage</a></li>
-                            <li><a href="./src/pages/crude-transhipment.html">Crude Transhippment</a></li>
-                            <li><a href="./src/pages/bunkenring.html">Bunkering Services</a></li>
+                            <li><a href="tank-storage.html">Tank Storage</a></li>
+                            <li><a href="crude-transhipment.html">Crude Transhippment</a></li>
+                            <li><a href="bunkenring.html">Bunkering Services</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -41,27 +43,103 @@
             </span>
         </div>
     </nav>
-    <section class="home">        
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="about-us" >
+        <div class="home-content about-uscontent">
+            <h1>Contact Us</h1>
+            <div class="breadcrumb aboutbreadcrumb">
+                <a href="../../index.html">HOME</a>
+                <span class="arrow">➝</span>
+                <a href="about.html">Contact Us</a>
+            </div>
+            
+        </div>
     </section>
-    <!-- DONT TOUCH ANYTHING ABOVE THIS LINE. MADDAAAMMMMMM -->
 
+    <div class="contact-container">
+        <!-- Left Section: Contact Details -->
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <p class="p">If you have any questions or complaints about our company or services, or if you want to learn more about us, please do not hesitate to contact us!.</p>
 
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>HEAD OFFICE</h4>
+                    <p>Schelde-Rijnweg 92, <br>  4691 TB Tholen Netherlands 9</p>
+                </div>
+            </div>
 
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>ROTHERDAM ADDRESS</h4>
+                    <p>Mozelweg 133, <br> 3198 LS Europoort Rotterdam</p>
+                </div>
+            </div>
 
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>EMAIL</h4>
+                    <p>info@gettafixlogistics.de <br> storage@gettafixlogistics.de <br> charter@gettafixlogistics.de</p>
+                </div>
+            </div>
 
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>PHONE</h4>
+                    <p>+31 97 005 034650 <br> +31 97 005 034650</p>
+                </div>
+            </div>
 
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-skype"></i>
+            </div>
+        </div>
 
-
-
-
-
-
-
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">HOME</h2>
+        <!-- Right Section: Contact Form -->
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            
+            <form>
+                <input type="text" placeholder="YOUR NAME*" required>
+                <input type="email" placeholder="EMAIL*" required>
+                <textarea placeholder="YOUR MESSAGE*" required></textarea>
+                <button type="submit">
+                    SEND QUESTIONS <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Map Section -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.14212697846!2d12.189776197265621!3d51.34063205134865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a65b9e11f93f73%3A0x4263df27bd8c640!2sLeipzig%2C%20Germany!5e0!3m2!1sen!2s!4v1619095372383!5m2!1sen!2s" 
+            allowfullscreen="" loading="lazy">
+        </iframe>
     </div>
 
+    
+    
 
 
 
@@ -73,12 +151,12 @@
 
 
 
-    <!-- DO NOT TOUCH ANYTHING BELOW THIS LINE OOOOOOOOOOO -->
+ 
     <footer>
         <div class="footer-container">
             
             <div class="footer-logo">
-                <img src="./src/Montalex/Montalex Oil.svg" alt="Montalex Logo">
+                <img src="../Montalex/Montalex Oil.svg" alt="Montalex Logo">
                 <p>We ship all over the world wherever you are.</p>
                 <p class="copyright">© 2023 Montalex Oil Refinery, TOO. All rights reserved.</p>
                 
@@ -97,26 +175,26 @@
             
                     <!-- About Us Dropdown -->
                     <li class="dropdown">
-                        <a href="./src/pages/about.html">
+                        <a href="about.html">
                             <i class="fas fa-chevron-right"></i> About us
                         </a>
                         <ul class="submenu">
-                            <li><a href="./src/pages/team.html">Our Team</a></li>
+                            <li><a href="">Our Team</a></li>
                             <li><a href="./src/pages/mission.html">Mission & Vision</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
+                    <li><a href="terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
                                         <!-- Services Dropdown -->
                                         <li class="dropdown">
-                                            <a href="./src/pages/services.html">
+                                            <a href="services.html">
                                                 <i class="fas fa-chevron-right"></i> Services
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="./src/pages/logistics.html">Logistics</a></li>
-                                                <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                                                <li><a href="">Logistics</a></li>
+                                                <li><a href="shipping.html">Shipping</a></li>
                                             </ul>
                                         </li>
-                    <li><a href="./src/pages/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>
             
@@ -141,15 +219,10 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="./src/script/navbar.js"></script>
-<script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
-</script>
+<script src="../script/index.js"></script>
+<script src="../script/navbar.js"></script>
+  
+
+  
+
 </html>
