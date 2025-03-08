@@ -35,30 +35,36 @@ const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 
 let index = 0;
-const slides = document.querySelectorAll('.gallery-slide');
-const totalSlides = slides.length;
+const slideWidth = document.querySelector('.gallery-slide').clientWidth;
+const totalSlides = track.children.length;
 
-function updateSlide() {
-    track.style.transition = "transform 0.5s ease-in-out";
-    track.style.transform = `translateX(-${index * 100}%)`;
+// Function to move to next slide
+function nextSlide() {
+    if (index < totalSlides - 1) {
+        index++;
+    } else {
+        index = 0; // Loop back to first slide
+    }
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
-// Next Button
-nextButton.addEventListener('click', () => {
-    if (index >= totalSlides - 1) {
-        index = 0; // Loop back to the first slide
-    } else {
-        index++;
-    }
-    updateSlide();
-});
-
-// Previous Button
-prevButton.addEventListener('click', () => {
-    if (index <= 0) {
-        index = totalSlides - 1; // Loop back to the last slide
-    } else {
+// Function to move to previous slide
+function prevSlide() {
+    if (index > 0) {
         index--;
+    } else {
+        index = totalSlides - 1; // Loop back to last slide
     }
-    updateSlide();
-});
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+// Add event listeners for buttons
+nextButton.addEventListener('click', nextSlide);
+prevButton.addEventListener('click', prevSlide);
+
+// Auto-slide every 3 seconds
+let autoSlide = setInterval(nextSlide, 3000);
+
+// Pause auto-slide when hovering over the gallery
+track.addEventListener('mouseenter', () => clearInterval(autoSlide));
+track.addEventListener('mouseleave', () => autoSlide = setInterval(nextSlide, 3000));
