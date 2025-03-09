@@ -30,7 +30,7 @@
     flex-wrap: wrap;     
     gap: 20px;
     padding: 20px;
-    border-bottom: 1px solid red; 
+    border-bottom: 1px solid rgba(115, 118, 124, 0.664); 
     margin-top: 40px !important;
 }
 .info-item i {

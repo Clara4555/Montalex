@@ -294,4 +294,22 @@ body {
         text-align: center;
         margin: auto;
     }
+
+    .solutions-grid {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(2, 1fr); */
+        gap: 40px;
+        clear: both;
+    }
+
+    .technology-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sustainability-content{
+        display: flex;
+        flex-direction: column;
+    }
 }
