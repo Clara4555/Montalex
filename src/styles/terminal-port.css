@@ -29,7 +29,9 @@
     display: flex;
     flex-wrap: wrap;     
     gap: 20px;
+    padding: 20px;
     border-bottom: 1px solid red; 
+    margin-top: 40px !important;
 }
 .info-item i {
     color: orange;
@@ -51,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    gap: 50px;
 }
 
 /* Left Column */
@@ -113,31 +116,36 @@
 .terminal-contact {
     flex: 1;
     background: #dff0ff;
-    padding: 20px;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
     border-radius: 8px;
 }
 
 .contact-title {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
 }
 
-.contact-email {
+.contact-email a{
+    text-decoration: none;
     color: orange;
+    font-size: 12px;
     font-weight: bold;
 }
 
 /* Contact Grid */
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 15px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 19px;
+    margin-top: 22px;
 }
 
 .contact-box h5 {
     font-size: 14px;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .contact-box p {
@@ -149,15 +157,19 @@
 .terminal-image {
     flex: 1;
     text-align: right;
+    /* width: 30%; */
 }
 
 .terminal-image img {
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     border-radius: 8px;
 }
 
-
+.terminal-footer{
+    width: 100% !important;
+    gap: 50px;
+}
 
 
 
