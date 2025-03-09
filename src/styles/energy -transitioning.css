@@ -620,6 +620,17 @@ p.show, h2.show {
     .infrastructure-item {
         max-width: 100%;
     }
+
+    /* Wrapper */
+.infrastructure-wrapper {
+    padding: 0 !important;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
     .grid-layout {
         flex-direction: column;
     }
@@ -627,6 +638,7 @@ p.show, h2.show {
     .content-card {
         max-width: 100%;
     }
+
 }
 @media (max-width: 600px) {
     .contain {
