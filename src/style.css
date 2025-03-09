@@ -78,8 +78,10 @@ body {
 	background-size:cover;
 }
 
-.dropdown {
-    position: relative;
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
 }
 
 .dropdown-menu {
@@ -90,10 +92,22 @@ body {
     border-radius: 5px;
     list-style: none;
     padding: 10px 0;
-    width: 310px !important;
+    width: 300px !important;
     height: 220px !important;
     top: 100%;
     right: 20%;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown.active .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-menu li {
@@ -111,11 +125,7 @@ body {
 .dropdown-menu li a:hover {
     background: #e0e0e048;
     width: 100% !important;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-    display: block !important;
+    border-radius: 10px 10px 10px 0;
 }
 
 .navTrigger {
@@ -580,7 +590,7 @@ body {
 @media screen and (max-width:1200px){
     .montalex{
         width: 15% !important;
-        margin-left: -12% !important;
+        margin-left: -2% !important;
     }
 }
 
@@ -591,6 +601,11 @@ body {
         gap: 30px;
         padding: 0 20px;
         text-align: center;
+    }
+
+    .montalex{
+        width: 15% !important;
+        margin-left: -2% !important;
     }
 
     .footer-logo, .footer-links, .footer-contact {
@@ -663,7 +678,7 @@ body {
     .montalex{
         margin-top: 5px;
         width: 19% !important;
-        margin-right: 50% !important;
+        margin-left: 10% !important;
     }
 }
 
@@ -671,11 +686,18 @@ body {
     .montalex{
         width: 15%;
         margin-top: 9px;
-        margin-left: -8% !important;
+        margin-left: 10% !important;
     }
+    body{
+        /* background-color: red !important; */
+    }
+
 }
 
 @media screen and (max-width:800px){
+    body{
+        /* background-color: red !important; */
+    }
 	.myP {
 		padding:2%;
 	}
@@ -684,16 +706,14 @@ body {
     }
     .dropdown-menu {
         /* display: none !important; */
-        /* position: absolute; */
         background: rgba(14, 42, 70, 0.39) !important;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         list-style: none;
-        /* padding: 10px 0; */
         width: 240px !important;
         height: 160px !important;
         top: 20%;
-        right:55%;
+        right: 47%;
         overflow: hidden;
     }
     
@@ -704,11 +724,10 @@ body {
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         list-style: none;
-        /* padding: 10px 0; */
-        width: 270px !important;
+        width: 265px !important;
         height: 210px !important;
         top: -20%;
-        right:50%;
+        right: 45%;
         overflow: hidden;
     }
 
@@ -743,7 +762,7 @@ body {
     .montalex{
         width: 15%;
         margin-top: 9px;
-        margin-left: -8% !important;
+        margin-left: 8% !important;
     }
 }
 
@@ -803,7 +822,7 @@ body {
     .montalex{
         width: 32% !important;
         margin-top: 9px;
-        margin-left: -8% !important;
+        margin-left: 8% !important;
     }
 
 }
@@ -827,4 +846,3 @@ body {
         font-size: 14px;
     }
 }
-

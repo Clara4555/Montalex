@@ -1,0 +1,297 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.storage-solutions {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Intro Text */
+.intro-text {
+    text-align: right;
+    max-width: 600px;
+    margin-bottom: 40px;
+    float: right;
+    font-size: 18px;
+}
+
+/* Grid Layout */
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    clear: both;
+}
+
+/* Solution Item */
+.solution-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Checkmark Icon */
+.solution-item i {
+    font-size: 30px;
+    color: #ffcc00;
+}
+
+/* Headings */
+.solution-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.solution-item p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+
+/* Technology Section */
+.technology-section {
+    background-color: #e6f2ff;
+    padding: 50px 10%;
+}
+
+.technology-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.technology-content img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.tech-text {
+    max-width: 600px;
+}
+.tech-text h2{
+    font-size: 20px;
+
+}
+.tech-text p{
+    font-size: 18px;
+
+}
+
+/* Section container */
+.sustainability {
+    /* width: 100%; */
+    padding: 50px 10%;
+    background-color: #ffffff;
+}
+
+/* Flex container for alignment */
+.sustainability-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left-side text */
+.sustainability-text {
+    flex: 1;
+    max-width: 600px;
+}
+.sustainability-text h2{
+    font-size: 20px;
+
+}
+.sustainability-text p{
+    font-size: 18px;
+}
+
+/* Right-side orange box */
+.sustainability-box {
+    flex: 1;
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+.sustainability-box p{
+    font-size: 15px;
+}
+
+
+/* Layout */
+.content-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 15px;
+}
+
+/* Image Styling */
+.image-wrapper {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Text Content */
+.text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.content-heading {
+    font-size: 26px;
+    font-weight: 500;
+    color: #003B5C;
+    line-height: 1.5;
+}
+
+
+
+
+
+/* Layout */
+.content-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Heading Styles */
+.main-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a00000;
+    text-transform: uppercase;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-style: italic;
+    color: #a00000;
+}
+
+/* Paragraph Styles */
+.paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hyperlink */
+.highlight-link {
+    color: #a00000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.highlight-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Adjust based on preference */
+    background: url('../Montalex/Website/img-88.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* Green Overlay */
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 128, 0, 0.7); /* Green tint */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Hero Text */
+.hero-content {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 600px;
+    margin-left: 10%;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #ff9800;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #ff9800;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-wrapper, 
+    .text-content {
+        max-width: 100%;
+    }
+    .content-wrapper {
+        padding: 30px 15px;
+    }
+
+    .main-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .sub-heading {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .paragraph {
+        text-align: justify;
+    }
+    .hero {
+        height: 200px;
+    }
+
+    .hero-content {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: auto;
+    }
+}

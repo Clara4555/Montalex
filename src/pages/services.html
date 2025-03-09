@@ -6,6 +6,10 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/services.css">
+    <link rel="stylesheet" href="../styles/global.css">
+
 </head>
 <body>
     <nav class="nav">
@@ -15,23 +19,23 @@
                 <ul class="navlinks">
                     <li><a href="../../index.html">Home</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/about.html" class="">About us</a>
+                        <a href="about.html" class="">About us</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./src/pages/sustainability.html">Sustainabilty</a></li>
-                            <li><a href="./src/pages/energy-transition.html">Energy Transition</a></li>
-                            <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                            <li><a href="sustainability.html">Sustainabilty</a></li>
+                            <li><a href="energy-transition.html">Energy Transition</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
                         </ul>
                     </li>
-					<li><a href="./src/pages/terminal-port.html">Terminal and Port</a></li>
+					<li><a href="terminal-port.html">Terminal and Port</a></li>
                     <li class="dropdown">
-                        <a href="./src/pages/services.html" class="">Services</a>
+                        <a href="services.html" class="">Services</a>
                         <ul class="dropdown-menu ii">
-                            <li><a href="./src/pages/tank-storage.html">Tank Storage</a></li>
-                            <li><a href="./src/pages/crude-transhipment.html">Crude Transhippment</a></li>
-                            <li><a href="./src/pages/bunkenring.html">Bunkering Services</a></li>
+                            <li><a href="tank-storage.html">Tank Storage</a></li>
+                            <li><a href="crude-transhipment.html">Crude Transhippment</a></li>
+                            <li><a href="bunkenring.html">Bunkering Services</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -41,9 +45,140 @@
             </span>
         </div>
     </nav>
-    <section class="home">        
+
+
+
+    <section class="about-us" >
+        <div class="home-content about-uscontent">
+            <h1>About Us</h1>
+            <div class="breadcrumb aboutbreadcrumb">
+                <a href="../../index.html">HOME</a>
+                <span class="arrow">➝</span>
+                <a href="services.html">Services</a>
+            </div>
+            
+        </div>
     </section>
-    <!-- DONT TOUCH ANYTHING ABOVE THIS LINE. MADDAAAMMMMMM -->
+   
+
+    <section class="storage">
+        <div class="storage__container">
+            <!-- Left Text Content -->
+            <div class="storage__content">
+                <h2 class="storage__title">We make storage active</h2>
+                <p class="storage__description">
+                    Montalex is a liquid bulk storage partner, specialising in end-to-end services 
+                    for storage, processing and logistics. Collaborating closely with our customers, 
+                    we provide dependable services that help their businesses run smoothly, as well 
+                    as creating the infrastructure that facilitates their growth. We make storage 
+                    active by connecting supply and demand in new ways and thinking ahead towards 
+                    the future.
+                </p>
+                <p class="storage__description">
+                    Montalex offers large storage facilities at strategic locations across the Netherlands, 
+                    France, the United Kingdom, Spain, Portugal, and Poland. With a total capacity of 
+                    over 5,400,000 cubic metres (CBM), our facilities handle a highly diversified base 
+                    of liquid bulk products and offer excellent...
+                </p>
+            </div>
+
+            <!-- Right Circular Infographic -->
+            <div class="storage__infographic">
+                <img src="../Montalex/services.svg" alt="Storage Services Infographic" class="storage__image">
+            </div>
+        </div>
+    </section>
+    <section class="supply-chain">
+        <div class="supply-chain__container">
+            <span class="supply-chain__line"></span>
+            <p class="supply-chain__text">
+                Montalex forms a vital link in the supply chain for a wide range of international customers.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="services">
+        <div class="services__container">
+            
+            <!-- Storage -->
+            <div class="service-card">
+                <img src="icons/storage-icon.png" alt="Storage Icon" class="service-card__icon">
+                <h3 class="service-card__title">Storage</h3>
+                <ul class="service-card__list">
+                    <li>→ 5.4M CBM total tank capacity</li>
+                    <li>→ Automated volume and temperature monitoring</li>
+                    <li>→ Tank capacity ranging from 600 to 40K CBM</li>
+                </ul>
+            </div>
+
+            <!-- Blending & Heating -->
+            <div class="service-card">
+                <img src="icons/blending-icon.png" alt="Blending Icon" class="service-card__icon">
+                <h3 class="service-card__title">Blending & Heating</h3>
+                <ul class="service-card__list">
+                    <li>→ Product blending, mixing & homogenization</li>
+                    <li>→ Product heating</li>
+                    <li>→ Tank insulation solutions for targeted energy efficiency</li>
+                </ul>
+            </div>
+
+            <!-- Processing & Refining -->
+            <div class="service-card">
+                <img src="icons/refining-icon.png" alt="Processing Icon" class="service-card__icon">
+                <h3 class="service-card__title">Processing & Refining</h3>
+                <ul class="service-card__list">
+                    <li>→ Integrated Petrochemical Industrial Distillation (PID) capabilities</li>
+                    <li>→ PID is optimized to distill clean fuel</li>
+                    <li>→ Enabling the transition to renewable energy products</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <img src="icons/refining-icon.png" alt="Processing Icon" class="service-card__icon">
+                <h3 class="service-card__title">Processing & Refining</h3>
+                <ul class="service-card__list">
+                    <li>→ Integrated Petrochemical Industrial Distillation (PID) capabilities</li>
+                    <li>→ PID is optimized to distill clean fuel</li>
+                    <li>→ Enabling the transition to renewable energy products</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <img src="icons/refining-icon.png" alt="Processing Icon" class="service-card__icon">
+                <h3 class="service-card__title">Processing & Refining</h3>
+                <ul class="service-card__list">
+                    <li>→ Integrated Petrochemical Industrial Distillation (PID) capabilities</li>
+                    <li>→ PID is optimized to distill clean fuel</li>
+                    <li>→ Enabling the transition to renewable energy products</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <img src="icons/refining-icon.png" alt="Processing Icon" class="service-card__icon">
+                <h3 class="service-card__title">Processing & Refining</h3>
+                <ul class="service-card__list">
+                    <li>→ Integrated Petrochemical Industrial Distillation (PID) capabilities</li>
+                    <li>→ PID is optimized to distill clean fuel</li>
+                    <li>→ Enabling the transition to renewable energy products</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="proposal">
+        <div class="proposal__container">
+            <h2 class="proposal__title">A Tailor-Made Proposal</h2>
+            <p class="proposal__description">
+                Want to know how we can help you solve your logistical issues? <br>
+                We are always there for you. Flexible and with our full attention.
+            </p>
+            <a href="contact.html" class="proposal__button">
+                CONTACT <span class="proposal__button-icon">→</span>
+                <span class="proposal__button-underline"></span>
+            </a>
+        </div>
+    </section>
 
 
 
@@ -52,33 +187,11 @@
 
 
 
-
-
-
-
-
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">HOME</h2>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- DO NOT TOUCH ANYTHING BELOW THIS LINE OOOOOOOOOOO -->
+    
     <footer>
         <div class="footer-container">
             
-            <div class="footer-logo">
-                <img src="./src/Montalex/Montalex Oil.svg" alt="Montalex Logo">
+            <div class="footer-logo"><img src="../Montalex/Montalex Oil.svg" alt="Montalex Logo">
                 <p>We ship all over the world wherever you are.</p>
                 <p class="copyright">© 2023 Montalex Oil Refinery, TOO. All rights reserved.</p>
                 
@@ -97,26 +210,26 @@
             
                     <!-- About Us Dropdown -->
                     <li class="dropdown">
-                        <a href="./src/pages/about.html">
+                        <a href="about.html">
                             <i class="fas fa-chevron-right"></i> About us
                         </a>
                         <ul class="submenu">
-                            <li><a href="./src/pages/team.html">Our Team</a></li>
+                            <li><a href="">Our Team</a></li>
                             <li><a href="./src/pages/mission.html">Mission & Vision</a></li>
                         </ul>
                     </li>
-                    <li><a href="./src/pages/terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
+                    <li><a href="terminal-port.html"><i class="fas fa-chevron-right"></i> Terminal Port</a></li>
                                         <!-- Services Dropdown -->
                                         <li class="dropdown">
-                                            <a href="./src/pages/services.html">
+                                            <a href="services.html">
                                                 <i class="fas fa-chevron-right"></i> Services
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="./src/pages/logistics.html">Logistics</a></li>
-                                                <li><a href="./src/pages/shipping.html">Shipping</a></li>
+                                                <li><a href="">Logistics</a></li>
+                                                <li><a href="shipping.html">Shipping</a></li>
                                             </ul>
                                         </li>
-                    <li><a href="./src/pages/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>
             
@@ -141,15 +254,10 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="./src/script/navbar.js"></script>
-<script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
+<script src="../script/index.js"></script>
+<script src="../script/navbar.js"></script>
+  
+
+    
 </script>
 </html>

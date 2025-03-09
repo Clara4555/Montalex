@@ -1,0 +1,475 @@
+
+
+/* Section Styling */
+.responsibility-section {
+    padding: 50px 20px;
+    /* text-align: center; */
+   
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenth2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004d32;
+}
+
+.contentp {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+
+
+/* Safety Section */
+.safety-section {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.safety-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.safety-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.safety-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.safety-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004d32;
+}
+
+.safety-section p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Safety Link */
+.safety-link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #004d32;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.safety-link:hover {
+    color: #028a50;
+}
+
+.arrow-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #f4c400;
+}
+
+
+/* Energy Section */
+.energy-section {
+    /* background-color: #004d32; */
+    /* padding: 50px 20px; */
+    color: white;
+}
+
+.energy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.energy-content {
+    text-align: left;
+    padding: 20px 10px;
+    max-width: 600px;
+        background-color: #004d32;
+}
+
+.energy-title {
+    font-size: 44px;
+    font-weight: bold;
+    color: white;
+}
+
+.energy-text {
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Energy Link */
+.energy-link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f4c400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.energy-link:hover {
+    color: #ffde59;
+}
+
+.energy-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Energy Image */
+.energy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* Work Environment Section */
+.work-environment {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    color: #004d32;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.work-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.work-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004d32;
+}
+
+.work-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Work Link */
+.work-link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f4c400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.work-link:hover {
+    color: #ffde59;
+}
+
+.work-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Work Image */
+.work-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Sustainability Section */
+.sustainability-section {
+    background-color: #00a5b8;
+    color: #ffffff;
+    padding: 50px 20px;
+    /* text-align: center; */
+}
+
+.sustainability-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sustainability-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.sustainability-text {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+   
+}
+
+/* Report Grid */
+.report-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.report-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+}
+
+.report-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.report-link {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffde59;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.report-link:hover {
+    color: #fff;
+}
+
+.report-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Sustainability Updates Section */
+.sustainability-updates {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.sustain-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+/* Updates Grid */
+.updates-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Update Card */
+.update-card {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.update-content {
+    padding: 20px;
+}
+
+.update-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.update-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+}
+
+.update-description {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #003366;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0055a5;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .contenth2 {
+        font-size: 2.5rem;
+    }
+
+    .contentp {
+        font-size: 1.1rem;
+    }
+    .safety-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .safety-image {
+        flex: 1;
+    }
+
+    .safety-content {
+        flex: 1;
+    }
+
+    .safety-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .safety-section p {
+        font-size: 1.1rem;
+    }
+    .energy-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .energy-content {
+        flex: 1;
+    }
+
+    .energy-image {
+        flex: 1;
+    }
+
+    .energy-title {
+        font-size: 2.5rem;
+    }
+
+    .energy-text {
+        font-size: 1.1rem;
+    }
+    .work-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .work-content {
+        flex: 1;
+    }
+
+    .work-image {
+        flex: 1;
+    }
+
+    .work-title {
+        font-size: 2.5rem;
+    }
+
+    .work-text {
+        font-size: 1.1rem;
+    }
+    .report-grid {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .report-item {
+        max-width: 300px;
+    }
+    .updates-grid {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .update-card {
+        max-width: 300px;
+    }
+}
