@@ -146,23 +146,25 @@
 
 /* Navigation Buttons */
 .nav-button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.795);
     color: white;
     border: none;
     cursor: pointer;
     font-size: 24px;
-    padding: 10px;
+    padding: 10px 19px;
+    z-index: 29;
     border-radius: 50%;
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
+    margin-top: 50px;
     transform: translateY(-50%);
 }
 
-.prev-button { left: 10px; }
-.next-button { right: 10px; }
+.prev-button { margin-right: -15px; }
+.next-button { margin-left: -15px; }
 
 .nav-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(252, 6, 6, 0.904);
 }
 
 
@@ -179,7 +181,7 @@
 
 @media (max-width: 600px) {
     .gallery-slide img {
-        width: 100%;
+        width: 100% !important;
     }
 }
 @media (max-width: 768px) {
