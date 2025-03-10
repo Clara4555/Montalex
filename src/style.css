@@ -898,22 +898,23 @@ footer .dropdown-menu a{
     .dropdown-menu {
         display: none !important;
         position: absolute;
-        background: rgba(14, 42, 70, 0.829) !important;
+        background: rgba(14, 42, 70, 0.932) !important;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         list-style: none;
         width: 180px !important;
         height: fit-content !important;
-        /* top: -20%; */
         right: 45%;
         overflow: hidden;
         padding: 0px !important;
+        z-index: 99;
+        padding-bottom: 10px !important;
     }
 
-    nav .ii {
+    nav .ii{
         display: none !important;
         position: absolute;
-        background: rgba(5, 30, 54, 0.877) !important;
+        background: rgba(5, 30, 54, 0.945) !important;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         list-style: none;
@@ -923,12 +924,23 @@ footer .dropdown-menu a{
         right: 45%;
         overflow: hidden;
         padding: 0px !important;
+        z-index: 99;
     }
     
-    .dropdown-menu a{
-        height: 0px;
+    .dropdown-menu li{
+        margin: 0 !important;
+    }
+
+    .dropdown-menu li a{
         padding-top: 10px !important;
-        font-size: 14px !important
+        font-size: 14px !important;
+    }
+
+    .dropdown-menu li a:hover {
+        background: #e0e0e048;
+        width: 100% !important;
+
+        border-radius: 10px 10px 10px 0;
     }
 }
 
